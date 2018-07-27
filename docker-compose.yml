@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sigma.patrimonioapi:
+    image: ${DOCKER_REGISTRY}sigmapatrimonioapi
+    build:
+      context: .
+      dockerfile: src\Dockerfile
